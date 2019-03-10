@@ -28,7 +28,33 @@ client.on('message', message => {
         }
 
     } else if (message.content === '!help') {
-        message.reply('\n!chunky -- I rate your plump level.');
+        message.reply('\n!chunky -- I rate your plump level.\n!flirt -- I flirt with you on demand.');
+    } else if (message.content === '!flirt') {
+
+        let flirt = Math.floor((Math.random() * 10) + 1);
+        
+        if (flirt == 1) {
+            message.reply("you are the sexiest thing i have seen today, and i look in a mirror this morning.");
+        } else if (flirt == 2) {
+            message.reply("i would call you sexy but i would be lying.");
+        } else if (flirt == 3) {
+            message.reply("i like 'em big and chunky, just like you.");
+        } else if (flirt == 4) {
+            message.reply("i thought i was looking in a mirror but then it turned out to be you.");
+        } else if (flirt == 5) {
+            message.reply("u sexy");
+        } else if (flirt == 6) {
+            message.reply("if you spell my name backwards it means otom otom which im guessing is your name.");
+        } else if (flirt == 7) {
+            message.reply("my name backwards is otom otom which rhymes with bottom bottom so show me your bottom.");
+        } else if (flirt == 8) {
+            message.reply("i threw up looking at you.");
+        } else if (flirt == 9) {
+            message.reply("i love your body");
+        } else if (flirt == 10) {
+            message.reply("are you a girl?");
+        }
+        
     }
 
 });
