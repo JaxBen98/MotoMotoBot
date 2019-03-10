@@ -56,19 +56,7 @@ client.on('message', message => {
         }
 
     } else if (message.content === '!moto') {
-
-        let moto = Math.floor((Math.random() * 3) + 1);
-
-        if (moto == 1) {
-            message.reply("https://media.discordapp.net/attachments/497564476867084288/553680225146503178/Z.png");
-        } else if (moto == 2) {
-            message.reply("https://media.discordapp.net/attachments/553680627573063693/553681712035397653/moto_hero.jpg");
-        } else if (moto == 3) {
-            message.reply("https://media.discordapp.net/attachments/553680627573063693/553681542095044608/index.jpg");
-        } else {
-            message.reply("https://media.discordapp.net/attachments/553680627573063693/553681712035397653/moto_hero.jpg")
-        }
-
+        message.reply("https://media.discordapp.net/attachments/553680627573063693/553681712035397653/moto_hero.jpg");
     }
 
 });
