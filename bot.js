@@ -28,7 +28,7 @@ client.on('message', message => {
         }
 
     } else if (message.content === '!help') {
-        message.reply('!chunky -- I rate your plump level.');
+        message.reply('\n!chunky -- I rate your plump level.');
     }
 
 });
