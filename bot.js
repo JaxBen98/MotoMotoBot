@@ -28,7 +28,7 @@ client.on('message', message => {
         }
 
     } else if (message.content === '!help') {
-        message.reply('\n!chunky -- I rate your plump level.\n!flirt -- I flirt with you on demand.');
+        message.reply('\n!chunky -- I rate your plump level.\n!flirt -- I flirt with you on demand.\n!moto -- Gives you a post from my insta <3');
     } else if (message.content === '!flirt') {
 
         let flirt = Math.floor((Math.random() * 10) + 1);
@@ -53,6 +53,18 @@ client.on('message', message => {
             message.reply("i love your body");
         } else if (flirt == 10) {
             message.reply("are you a girl?");
+        }
+
+    } else if (message.content === '!moto') {
+
+        let moto = Math.floor((Math.random() * 3) + 1);
+
+        if (moto == 1) {
+            message.reply("https://media.discordapp.net/attachments/497564476867084288/553680225146503178/Z.png");
+        } else if (moto == 2) {
+            message.reply("https://media.discordapp.net/attachments/553680627573063693/553681712035397653/moto_hero.jpg");
+        } else if (moto == 3) {
+            message.reply("https://media.discordapp.net/attachments/553680627573063693/553681542095044608/index.jpg");
         }
         
     }
