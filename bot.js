@@ -6,7 +6,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
 
-    client.user.setGame('with hot ladies');
+    client.user.setActivity('with hot ladies');
 
 });
 
@@ -18,7 +18,7 @@ client.on('message', message => {
 
        message.reply('!!!ping received!!!');
 
-       }
+    }
 
 });
 
