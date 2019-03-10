@@ -65,8 +65,10 @@ client.on('message', message => {
             message.reply("https://media.discordapp.net/attachments/553680627573063693/553681712035397653/moto_hero.jpg");
         } else if (moto == 3) {
             message.reply("https://media.discordapp.net/attachments/553680627573063693/553681542095044608/index.jpg");
+        } else {
+            message.reply("https://media.discordapp.net/attachments/553680627573063693/553681712035397653/moto_hero.jpg")
         }
-        
+
     }
 
 });
