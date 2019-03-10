@@ -6,7 +6,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
 
-    client.user.setActivity('with hot ladies');
+    client.user.setGame('with hot ladies');
 
 });
 
