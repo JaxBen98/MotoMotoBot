@@ -9,7 +9,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === '!chunky') {
+    if (message.content === '/chunky') {
 
         let chunky = Math.floor((Math.random() * 100) + 1);
 
@@ -27,9 +27,9 @@ client.on('message', message => {
             message.reply("you are: " + chunky.toString() + "% chunky. You are perfect for me.");
         }
 
-    } else if (message.content === '!help') {
-        message.reply('\n!chunky -- I rate your plump level.\n!flirt -- I flirt with you on demand.\n!moto -- Gives you a post from my insta <3');
-    } else if (message.content === '!flirt') {
+    } else if (message.content === '/help') {
+        message.reply('\n/chunky -- I rate your plump level.\n/flirt -- I flirt with you on demand.\n/moto -- Gives you a post from my insta <3');
+    } else if (message.content === '/flirt') {
 
         let flirt = Math.floor((Math.random() * 10) + 1);
         
@@ -55,7 +55,7 @@ client.on('message', message => {
             message.reply("are you a girl?");
         }
 
-    } else if (message.content === '!moto') {
+    } else if (message.content === '/moto') {
         message.reply("https://media.discordapp.net/attachments/553680627573063693/553681712035397653/moto_hero.jpg");
     }
 
