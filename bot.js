@@ -11,7 +11,7 @@ client.on('message', message => {
 
     if (message.content === '/chunky') {
 
-        let chunky = Math.floor((Math.random() * 100) + 1);
+        let chunky = Math.floor((Math.random() * 100) + 1); // maybe assign a chunky/sexy value to each ID so they can't just re-run the command?
 
         if (chunky < 11) {
             message.reply("you are: " + chunky.toString() + "% chunky. Not worth it in my opinion.");
@@ -28,13 +28,13 @@ client.on('message', message => {
         }
 
     } else if (message.content === '/help') {
-        message.reply('\n/chunky -- I rate your plump level.\n/flirt -- I flirt with you on demand.\n/moto -- Gives you a post from my insta <3');
+        message.reply('\n/chunky -- I rate your plump level.\n/flirt -- I flirt with you on demand.\n/moto -- Gives you a post from my insta <3\n/sexy - I rate your sexiness');
     } else if (message.content === '/flirt') {
 
-        let flirt = Math.floor((Math.random() * 10) + 1);
+        let flirt = Math.floor((Math.random() * 11) + 1);
         
         if (flirt == 1) {
-            message.reply("you are the sexiest thing i have seen today, and i look in a mirror this morning.");
+            message.reply("you are the sexiest thing i have seen today, and i looked in a mirror this morning.");
         } else if (flirt == 2) {
             message.reply("i would call you sexy but i would be lying.");
         } else if (flirt == 3) {
@@ -53,10 +53,44 @@ client.on('message', message => {
             message.reply("i love your body");
         } else if (flirt == 10) {
             message.reply("are you a girl?");
+        } else if (flirt == 11) {
+            message.reply("u sexy");
         }
 
     } else if (message.content === '/moto') {
-        message.reply("https://media.discordapp.net/attachments/553680627573063693/553681712035397653/moto_hero.jpg");
+        let random = Math.floor((Math.random() * 3) - 1);
+
+        if (random == 1) {
+            message.reply("https://media.discordapp.net/attachments/553680627573063693/553681712035397653/moto_hero.jpg");
+        } else if (random == 2) {
+            message.reply("https://vignette.wikia.nocookie.net/penguinsofmadagascar/images/5/51/MotoMoto2.jpg/revision/latest/top-crop/width/360/height/450?cb=20120622005912");
+        }
+    } else if (message.content === '/sexy') {
+        let sexy = Math.floor((Math.random() * 100) + 1);
+
+        if (sexy == 1) {
+            message.reply("You disgusting little rat. " + sexy.toString() + "% sexy.");
+        } else if ((sexy > 1) && (sexy < 10)) {
+            message.reply("My turds look better than you bb. " + sexy.toString() + "% sexy.");
+        } else if ((sexy > 11) && (sexy < 25)) {
+            message.reply("You are ugly. " + sexy.toString() + "% sexy.");
+        } else if ((sexy > 26) && (sexy < 49)) {
+            message.reply("You are extremely ugly. " + sexy.toString() + "% sexy");
+        } else if (sexy == 50) {
+            message.reply("You are half as sexy as me. " + sexy.toString() + "% sexy");
+        } else if (sexy == 51) {
+            message.reply("ngl you so ugly you dont wanna see your number");
+        } else if ((sexy > 52) && (sexy < 70)) {
+            message.reply("You look almost as good as my mirror honey. " + sexy.toString() + "% sexy.");
+        } else if ((sexy > 71) && (sexy < 80)) {
+            message.reply("dang girl you a hotty with a body. " + sexy.toString() + "% sexy.");
+        } else if ((sexy > 80) && (sexy < 98)) {
+            message.reply("dang girl you almost as hot as me. " + sexy.toString() + "% sexy.");
+        } else if (sexy == 99) {
+            message.reply("dang girl you as hot as me. " + sexy.toString() + "% sexy.");
+        } else if (sexy == 100) {
+            message.reply("wow you too hot for even me. " + sexy.toString() + "% sexy.");
+        }
     }
 
 });
